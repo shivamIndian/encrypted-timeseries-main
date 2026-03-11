@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timeseries Data</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 24px;
+      }
+      .stats {
+        margin-bottom: 16px;
+      }
+      .stats div {
+        margin: 4px 0;
+      }
+      #data {
+        padding-left: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Realtime Data</h2>
+
+    <div class="stats">
+      <div>Batch success rate: <span id="batch-rate">0%</span></div>
+      <div>Batch total: <span id="batch-total">0</span></div>
+      <div>Batch valid: <span id="batch-valid">0</span></div>
+      <div>Overall success rate: <span id="overall-rate">0%</span></div>
+      <div>Overall total: <span id="overall-total">0</span></div>
+      <div>Overall valid: <span id="overall-valid">0</span></div>
+    </div>
+
+    <ul id="data"></ul>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
