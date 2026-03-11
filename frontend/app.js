@@ -1,4 +1,4 @@
-const socket = io("http://localhost:5000");
+const socket = io("https://listener-service-41sd.onrender.com");
 
 const listEl = document.getElementById("data");
 const MAX_ITEMS = 200;
