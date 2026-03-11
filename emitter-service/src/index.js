@@ -20,7 +20,7 @@ if (iv.length !== 16) {
   throw new Error("STREAM_IV must be 16 bytes (32 hex chars)");
 }
 
-const listenerUrl = process.env.LISTENER_URL || "http://localhost:5000";
+const listenerUrl = process.env.LISTENER_URL || "https://listener-service-41sd.onrender.com";
 const socket = io(listenerUrl);
 
 function randomInt(min, max) {

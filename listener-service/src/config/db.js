@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const mongoUri =
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/encrypted_timeseries";
+  process.env.MONGODB_URI || "mongodb+srv://333sshivam333:Shivam1234@cluster0.ujtck.mongodb.net/encrypted_timeseries?retryWrites=true&w=majority";
 
 mongoose.set("strictQuery", true);
 
